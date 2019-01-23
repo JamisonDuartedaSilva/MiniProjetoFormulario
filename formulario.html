@@ -4,17 +4,41 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Formulario</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="formulario.css" />
 
 </head>
 
 <body>
+    <div id="Conter">
 
-    <label for="email"></label>
-    <input type="text" name="email" id="email" placeholder="email@gmail.com">
+        <p id="login">Formulário de Registro</p>
+        <div id="Campos">
+            <div class="campoPreenchivel">
+                <label for="email">Email: </label>
+                <input type="text" name="email" class="inputBox" placeholder="email@email.com.br">
+                <br>
+            </div>
+            <div class="campoPreenchivel">
+                <label for="telefone">Telefone: </label>
+                <input type="text" name="telefone" class="inputBox" placeholder="123456789">
+                <br>
+            </div>
+            <div class="campoPreenchivel">
+                <label for="senha">Senha: </label>
+                <input type="text" name="senha" class="inputBox">
+                <br>
+            </div>
+            <div class="campoPreenchivel">
+                <label for="confirmeSenha">Confirme Senha: </label>
+                <input type="text" name="confirmeSenha" class="inputBox">
+                <br>
+            </div>
+        </div>
+        <input type="submit" value="Registrar" id="btRegistrar">
 
+    </div>
 
     <script src="formulario.js"></script>
 </body>
