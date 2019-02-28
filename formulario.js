@@ -18,12 +18,6 @@ $("#btRegistrar").mouseup(function () {
 $("#btRegistrar").click(function () {
     var MensagemErro = "";
     var CampoFaltando = "";
-    if ($("#Email").val() == "") {
-        CampoFaltando += "O email está faltando. \n";
-    }
-    if ($("#Telefone").val() == "") {
-        CampoFaltando += "O Telefone está faltando. \n";
-    }
     if ($("#Senha").val() == "") {
         CampoFaltando += "A Senha está faltando. \n";
     }
@@ -31,10 +25,10 @@ $("#btRegistrar").click(function () {
         CampoFaltando += "A confirmação da Senha está faltando. \n";
     }
 
-    if (validateEmail($("#Email").val()) == false && validateEmail($("#Email").val()) != "") {
+    if (validateEmail($("#Email").val()) == false) {
         MensagemErro += "O endereço de email não é valido! \n";
     }
-    if ($.isNumeric($("#Telefone").val()) == false && validateEmail($("#Telefone").val()) != "") {
+    if ($.isNumeric($("#Telefone").val()) == false) {
         MensagemErro += "O telefone não é Válido! \n";
     }
     if ($("#Senha").val() != $("#ConfirmeSenha").val() && $("#Senha").val() != "" && $("#ConfirmeSenha").val() != "") {
